@@ -32,8 +32,7 @@
     <section class="main">
         <div>
             <h1>Hii, I'm <span>Rishav</span></h1>
-            <h3>and i'm a <a class="typewrite" data-period="2000"
-                    data-type='[ "WebDeveloper", "AppDeveloper"]'>
+            <h3>and i'm a <a class="typewrite" data-period="2000" data-type='[ "WebDeveloper", "AppDeveloper"]'>
                     <span class="wrap"></span>
                 </a></h3>
         </div>
@@ -209,27 +208,25 @@
 <script>
     var cursor = document.querySelector('.cursor');
     var cursor2 = document.querySelector('.cursor2');
+    var navLinks = document.querySelectorAll('a');
 
     document.addEventListener('mousemove', function (e) {
         cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
     })
 
-    var mouseCursor = document.querySelector('.cursor');
-    var mouseCursor2 = document.querySelector('.cursor2');
-    var navLinks = document.querySelectorAll('a');
-
     window.addEventListener("mousemove", cursor);
     navLinks.forEach(link => {
         link.addEventListener("mouseleave", () => {
-            mouseCursor.classList.remove("cursor-large");
-            mouseCursor2.classList.remove("cursor2-n");
+            cursor.classList.remove("cursor-large");
+            cursor2.classList.remove("cursor2-n");
         });
-        
+
         link.addEventListener("mousemove", () => {
-            mouseCursor.classList.add("cursor-large");
-            mouseCursor2.classList.add("cursor2-n");
+            cursor.classList.add("cursor-large");
+            cursor2.classList.add("cursor2-n");
         });
     });
+
 </script>
 
 </html>
