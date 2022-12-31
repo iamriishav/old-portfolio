@@ -12,7 +12,6 @@
 body {
     background-color: #2b323c;
     height: 100%;
-    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -92,6 +91,10 @@ body {
     #about a {
         text-align: center;
         width: 90vw;
+    }
+
+    .cursor, .cursor2{
+        display: none;
     }
 }
 
@@ -492,13 +495,16 @@ a {
     font-size: 1.3rem;
 }
 
-#contact p,
-a:hover {
+#contact p {
+    color: #fff;
+}
+
+#contact a:hover {
     color: yellow;
     transition: .2s ease-in;
 }
 
-#contact h3{
+#contact h3 {
     margin-top: 4vh;
     font-size: 1rem;
     color: #fff;
@@ -508,6 +514,41 @@ a:hover {
     margin-top: 4vh;
     font-size: 1rem;
     color: #fff;
+}
+
+.cursor {
+    position: fixed;
+    width: 12px;
+    height: 12px;
+    background-color: #c6c6c6;
+    border-radius: 50%;
+    left: -2%;
+    top: -2%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: .15s;
+}
+
+.cursor2 {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #c6c6c6;
+    border-radius: 50%;
+    left: -2%;
+    top: -2%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: .1s;
+}
+
+.cursor-large{
+    transform: scale(5);
+    opacity: .3;
+}
+
+.cursor2-n {
+    opacity: 0;
 }
 
 .scroll-top i {
