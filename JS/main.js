@@ -57,28 +57,10 @@ window.onload = function () {
   document.body.appendChild(css);
 };
 
-// <-------------Scroll To Top Button----------------->
-
-$(document).ready(function () {
-  $(window).scroll(function () {
-      if ($(window).scrollTop() > 300) {
-          $('i').css({
-              "opacity": "1", "pointer-events": "auto"
-          });
-      } else {
-          $('i').css({
-              "opacity": "0", "pointer-events": "none"
-          });
-      }
-  });
-  $('i').click(function () {
-      $('html').animate({ scrollTop: 0 }, 100);
-  });
-});
-
+// <===============================>
 // <------------Prevent Inspect Tool---------------->
 
-document.addEventListener('contextmenu', (e) => e.preventDefault());
+document.addEventListener("contextmenu", (e) => e.preventDefault());
 
 function ctrlShiftKey(e, keyCode) {
   return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
@@ -87,10 +69,30 @@ function ctrlShiftKey(e, keyCode) {
 document.onkeydown = (e) => {
   if (
     event.keyCode === 123 ||
-    ctrlShiftKey(e, 'I') ||
-    ctrlShiftKey(e, 'J') ||
-    ctrlShiftKey(e, 'C') ||
-    (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+    ctrlShiftKey(e, "I") ||
+    ctrlShiftKey(e, "J") ||
+    ctrlShiftKey(e, "C") ||
+    (e.ctrlKey && e.keyCode === "U".charCodeAt(0))
   )
     return false;
 };
+
+// <===============================>
+
+document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("scroll", function () {
+    var wn = window.scrollY;
+    var navbar = document.querySelector(".navbar");
+    if (wn > 20) {
+      if (document.body.classList.contains("dark-theme")) {
+        navbar.style.borderBottom = "1.5px solid rgba(0,0,0, .1)";
+        navbar.style.transitionDuration = "0.1s";
+      } else {
+        navbar.style.borderBottom = "1.5px solid rgba(255,255,255, .1)";
+        navbar.style.transitionDuration = "0.1s";
+      }
+    } else {
+      navbar.style.borderBottom = "none";
+    }
+  });
+});

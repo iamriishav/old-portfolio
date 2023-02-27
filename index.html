@@ -1,232 +1,501 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/main.css">
-    <link rel="shortcut icon" href="Assets/images/laptop.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#ff0080" />
+    <meta
+      name="description"
+      content="Personal portfolio website of rishav kumar rajak student of bit sindri batch 2019 go by the name of iamriishav on different platforms"
+    />
+    <link rel="canonical" href="https://geekyrishav.in/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Personal portfolio website of iamriishav aka geekyrishav"
+    />
+    <meta
+      property="og:description"
+      content="Personal portfolio website of rishav kumar rajak student of bit sindri batch 2019 go by the name of iamriishav on different platforms"
+    />
+    <meta property="og:url" content="https://geekyrishav.in/" />
+    <meta
+      property="og:site_name"
+      content="Portfolio website geekyrishav and iamriishav"
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, portfolio, portfolio website, rishav portfolio website, rishav kumar rajak, iamriishav"
+    />
+    <meta name="author" content="Rishav Kumar Rajak" />
+    <link rel="stylesheet" href="/CSS/main.css" />
+    <link
+      rel="shortcut icon"
+      href="Assets/images/laptop.webp"
+      type="image/x-icon"
+    />
+    <link rel="apple-touch-icon" href="Assets/images/laptop.webp" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"
+    ></script>
     <script src="/JS/main.js"></script>
+    <noscript>Please enable JavaScript to run this page</noscript>
     <title>Portfoilo</title>
-</head>
+  </head>
 
-<body>
-    <div class="scroll-top">
-        <i class="fas fa-chevron-up"></i>
+  <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
+    <div id="preloader">
+      <div id="loader"></div>
     </div>
-    <nav>
-        <!-- <h1>Port<span>folio</span></h1> -->
-        <img src="/Assets/images/responsive.gif" alt="Portfolio">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skill">Skills</a></li>
-            <li><a href="#qual">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="/">
+          <img src="/Assets/images/user.webp" id="user" alt="user" />
+          <h2>Port<span>folio</span></h2>
+        </a>
+      </div>
+      <div class="hamburger">
+        <img id="ham" src="/Assets/images/hamburger.webp" alt="hamburger" />
+      </div>
+      <div class="nav-right">
+        <img src="/Assets/images/close.webp" alt="close" class="open-ham" />
+        <a href="#" class="click">Home</a>
+        <a href="#about" class="nav click">About</a>
+        <a href="#skill" class="nav click">Skills</a>
+        <a href="#project" class="nav click">Projects</a>
+        <a href="#qual" class="nav click">Education</a>
+        <a href="#contact" class="nav click">Contact</a>
+      </div>
+      <label class="switch">
+        <input type="checkbox" aria-label="checkbox" />
+        <span class="slider"></span>
+      </label>
     </nav>
+
     <section class="main">
-        <div>
-            <h1>Hii, I'm <span>Rishav</span></h1>
-            <h3>and i'm a <a class="typewrite" data-period="2000" data-type='[ "WebDeveloper", "AppDeveloper"]'>
-                    <span class="wrap"></span>
-                </a></h3>
-        </div>
-        <div class="image">
-            <img src="Assets/images/software-engineer-1.png" alt="Rishav">
-        </div>
+      <div data-aos="slide-right">
+        <h1>Hello, my name is <span>Rishav</span></h1>
+        <h3>
+          and i'm a
+          <a
+            href="#"
+            class="typewrite"
+            data-period="2000"
+            data-type='[ "WebDeveloper", "AppDeveloper", "Freelancer"]'
+          >
+            <span class="wrap"></span>
+          </a>
+        </h3>
+      </div>
+      <div class="image" data-aos="slide-left">
+        <img src="Assets/images/developer-male.webp" alt="Developer" />
+      </div>
     </section>
 
     <section id="about">
-        <h1>About</h1>
-        <div class="container">
-            <h2>Hii, 👋</h2>
-            <p>I’m an aspiring engineer, tech-savvy, and a pragmatic developer wandering around the tech fields to
-                bring
-                creativity to life. My name is Rishav Kumar Rajak.</p>
-            <p><span>My Interest and Skills</span>: I love full-stack development, both web, and mobile apps.
-                React-Native,
-                Python(Django), php, and SQL are my skill sets. I'm always ready to learn new things and take new
-                challenges and turn
-                possibilities into realities. What are you in it for?</p>
-            <a href="/Assets/doc/resume.pdf" target="_blank">Resume</a>
+      <h1 data-aos="zoom-in-up">About</h1>
+      <div class="about-container">
+        <div class="container" data-aos="slide-right">
+          <h2>Hii, 👋</h2>
+          <p>
+            I’m an aspiring engineer, tech-savvy, and a pragmatic developer
+            wandering around the tech fields to bring creativity to life. My
+            name is Rishav Kumar Rajak.
+          </p>
+          <p>
+            <span>My Interest and Skills</span>: I love full-stack development,
+            both web, and mobile apps. HTML, CSS, JavaScript, php, MySQL,
+            MongoDB and various CSS frameworks like Bootstrap and Tailwind CSS
+            are my skill sets. I'm always ready to learn new things and take new
+            challenges and turn possibilities into realities. What are you in it
+            for?
+          </p>
+          <button
+            class="button"
+            onclick="
+                window.open('https://drive.google.com/file/d/1MCVckedZGlfkp5O5nY7ULN4J_GCJZO9h/view?usp=share_link','_blank')"
+          >
+            <span class="button_lg">
+              <span class="button_sl"></span>
+              <span class="button_text">Resume</span>
+            </span>
+          </button>
         </div>
+        <div class="about-img" data-aos="slide-left">
+          <img src="/Assets/images/about.webp" />
+        </div>
+      </div>
     </section>
 
     <section id="skill">
-        <h1>My Skills</h1>
-        <div class="row">
-            <div class="column">
-                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
-                    <div class="card">
-                        <img src="Assets/images/html-5.png" alt="html" class="skill-img">
-                        <p>HTMl</p>
-                    </div>
-                </a>
+      <h1 data-aos="zoom-in-up">My Skills</h1>
+      <div class="row">
+        <div class="column" data-aos="fade-up">
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+            target="_blank"
+          >
+            <div class="card">
+              <img
+                src="Assets/images/html-5.webp"
+                alt="html"
+                class="skill-img"
+              />
+              <p>HTMl</p>
             </div>
-            <div class="column">
-                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
-                    <div class="card">
-                        <img src="/Assets/images/css-3.png" alt="css" class="skill-img">
-                        <p>CSS</p>
-                    </div>
-                </a>
-            </div>
-            <div class="column">
-                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-                    <div class="card">
-                        <img src="/Assets/images/js.png" alt="JavaScript" class="skill-img">
-                        <p>JavaScript</p>
-                    </div>
-                </a>
-            </div>
-            <div class="column">
-                <a href="https://docs.python.org/3/" target="_blank">
-                    <div class="card">
-                        <img src="/Assets/images/python.png" alt="Python" class="skill-img">
-                        <p>Python</p>
-                    </div>
-                </a>
-            </div>
-            <div class="column">
-                <a href="https://cppguide.readthedocs.io/en/latest/" target="_blank">
-                    <div class="card">
-                        <img src="/Assets/images/c-.png" alt="c++" class="skill-img">
-                        <p>C++</p>
-                    </div>
-                </a>
-            </div>
-            <div class="column">
-                <a href="https://www.php.net/manual/en/" target="_blank">
-                    <div class="card">
-                        <img src="/Assets/images/php.png" alt="php" class="skill-img">
-                        <p>php</p>
-                    </div>
-                </a>
-            </div>
-            <div class="column">
-                <a href="https://dev.mysql.com/doc/refman/8.0/en/" target="_blank">
-                    <div class="card">
-                        <img src="/Assets/images/mysql.png" alt="MySql" class="skill-img">
-                        <p>MySql</p>
-                    </div>
-                </a>
-            </div>
-            <div class="column">
-                <a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/" target="_blank">
-                    <div class="card">
-                        <img src="/Assets/images/bootstrap.png" alt="BootStrap" class="skill-img">
-                        <p>BootStrap</p>
-                    </div>
-                </a>
-            </div>
+          </a>
         </div>
+        <div class="column" data-aos="fade-up">
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+            target="_blank"
+          >
+            <div class="card">
+              <img
+                src="/Assets/images/css-3.webp"
+                alt="css"
+                class="skill-img"
+              />
+              <p>CSS</p>
+            </div>
+          </a>
+        </div>
+        <div class="column" data-aos="fade-up">
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            target="_blank"
+          >
+            <div class="card">
+              <img
+                src="/Assets/images/js.webp"
+                alt="JavaScript"
+                class="skill-img"
+              />
+              <p>JavaScript</p>
+            </div>
+          </a>
+        </div>
+        <div class="column" data-aos="zoom-in-up">
+          <a href="https://docs.python.org/3/" target="_blank">
+            <div class="card">
+              <img
+                src="/Assets/images/python.webp"
+                alt="Python"
+                class="skill-img"
+              />
+              <p>Python</p>
+            </div>
+          </a>
+        </div>
+        <div class="column" data-aos="zoom-in-up">
+          <a href="https://cppguide.readthedocs.io/en/latest/" target="_blank">
+            <div class="card">
+              <img src="/Assets/images/c-.webp" alt="c++" class="skill-img" />
+              <p>C++</p>
+            </div>
+          </a>
+        </div>
+        <div class="column" data-aos="fade-up">
+          <a href="https://www.php.net/manual/en/" target="_blank">
+            <div class="card">
+              <img src="/Assets/images/php.webp" alt="php" class="skill-img" />
+              <p>php</p>
+            </div>
+          </a>
+        </div>
+        <div class="column" data-aos="fade-up">
+          <a href="https://dev.mysql.com/doc/refman/8.0/en/" target="_blank">
+            <div class="card">
+              <img
+                src="/Assets/images/mysql.webp"
+                alt="MySql"
+                class="skill-img"
+              />
+              <p>MySql</p>
+            </div>
+          </a>
+        </div>
+        <div class="column" data-aos="fade-up">
+          <a href="https://www.mongodb.com/docs/" target="_blank">
+            <div class="card">
+              <img
+                src="/Assets/images/mongodb.webp"
+                alt="MongoDB"
+                class="skill-img"
+              />
+              <p>MongoDB</p>
+            </div>
+          </a>
+        </div>
+        <div class="column" data-aos="fade-up">
+          <a
+            href="https://getbootstrap.com/docs/4.1/getting-started/introduction/"
+            target="_blank"
+          >
+            <div class="card">
+              <img
+                src="/Assets/images/bootstrap.webp"
+                alt="BootStrap"
+                class="skill-img"
+              />
+              <p>BootStrap</p>
+            </div>
+          </a>
+        </div>
+        <div class="column" data-aos="fade-up">
+          <a
+            href="https://v2.tailwindcss.com/docs/installation"
+            target="_blank"
+          >
+            <div class="card">
+              <img
+                src="/Assets/images/tailwind.webp"
+                alt="Tailwind"
+                class="skill-img"
+              />
+              <p>tailwind</p>
+            </div>
+          </a>
+        </div>
+      </div>
     </section>
+
+    <section id="project">
+      <h1 data-aos="zoom-in-up">Projects</h1>
+      <div class="container2">
+        <div class="column2 project-col" data-aos="fade-up">
+          <a
+            href="https://github.com/iamriishav/Ride-With-Me---Cab-Service"
+            target="_blank"
+          >
+            <div class="card project-card">
+              <img src="/Assets/images/cab.webp" alt="Cab" />
+              <h2>Ride With Me - Cab Service</h2>
+              <h3>Built using HTML, CSS, JavaScript, PHP, and MySQL.</h3>
+              <p>8 July, 2022</p>
+            </div>
+          </a>
+        </div>
+        <div class="column2 project-col" data-aos="fade-up">
+          <a href="https://yourdailyquotes.netlify.app/" target="_blank">
+            <div class="card project-card">
+              <img class="quote" src="/Assets/images/quote2.webp" alt="Quote" />
+              <h2>Your Daily Quotes</h2>
+              <h3>Built using HTML, CSS, JavaScript.</h3>
+              <p>31 January, 2023</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section id="qual">
-        <h1>Education</h1>
-        <div class="container">
-            <div class="column qual-col">
-                <a href="https://www.bitsindri.ac.in/" target="_blank">
-                    <div class="card qual-card">
-                        <!-- <img src="/Assets/images/grad.png" alt="Graduation"> -->
-                        <img src="/Assets/images/mortarboard.gif" alt="Graduation">
-                        <h2>2019 - Present</h2>
-                        <h3>B.I.T Sindri</h3>
-                        <p>
-                            Bachelor's Degree in Information Technology.
-                        </p>
-                    </div>
-                </a>
+      <h1 data-aos="zoom-in-up">Education</h1>
+      <div class="container">
+        <div class="column qual-col" data-aos="fade-up">
+          <a href="https://www.bitsindri.ac.in/" target="_blank">
+            <div class="card qual-card">
+              <img src="/Assets/images/homework.webp" alt="Graduation" />
+              <h2>2019 - Present</h2>
+              <h3>BIT Sindri</h3>
+              <p>Bachelor's Degree in Information Technology.</p>
             </div>
-            <div class="column qual-col">
-                <a href="http://www.spmintercollege.in/" target="_blank">
-                    <div class="card qual-card">
-                        <!-- <img src="/Assets/images/grad.png" alt="Senior-Secondry"> -->
-                        <img src="/Assets/images/mortarboard.gif" alt="Senior-Secondry">
-                        <h2>2017 - 2019</h2>
-                        <h3>Dr. S.P.M Inter College</h3>
-                        <p>
-                            Secondry education in Maths
-                        </p>
-                    </div>
-                </a>
-            </div>
-            <div class="column qual-col">
-                <a href="http://svmsindri.com/" target="_blank">
-                    <div class="card qual-card">
-                        <!-- <img src="/Assets/images/grad.png" alt="Schooling"> -->
-                        <img src="/Assets/images/mortarboard.gif" alt="Schooling">
-                        <h2>2013 - 2017</h2>
-                        <h3>S.V.M Sindri</h3>
-                        <p>
-                            High School
-                        </p>
-                    </div>
-                </a>
-            </div>
+          </a>
         </div>
-    </section>
-    <section id="contact">
-        <h1>Contact Me</h1>
-        <center>
-            <div class="social">
-                <a href="https://facebook.com/iamriishav" target="_blank">
-                    <ion-icon id="facebook" name="logo-facebook"></ion-icon>
-                </a>
-                <a href="https://instagram.com/iamriishav" target="_blank">
-                    <ion-icon id="instagram" name="logo-instagram"></ion-icon>
-                </a>
-                <a href="https://wa.me/+919472742873" target="_blank">
-                    <ion-icon id="wp" name="logo-whatsapp"></ion-icon>
-                </a>
-                <a href="https://twitter.com/iamriishav" target="_blank">
-                    <ion-icon id="twitter" name="logo-twitter"></ion-icon>
-                </a>
-                <a href="https://linkedin.com/in/iamriishav" target="_blank">
-                    <ion-icon id="linkedin" name="logo-linkedin"></ion-icon>
-                </a>
-                <a href="https://github.com/iamriishav" target="_blank">
-                    <ion-icon id="github" name="logo-github"></ion-icon>
-                </a>
+        <div class="column qual-col" data-aos="fade-up">
+          <a href="http://www.spmintercollege.in/" target="_blank">
+            <div class="card qual-card">
+              <img src="/Assets/images/homework.webp" alt="Senior-Secondry" />
+              <h2>2017 - 2019</h2>
+              <h3>Dr. Shyama Prasad Mukherjee Inter College Sindri</h3>
+              <p>Secondry education in Maths</p>
             </div>
-            <p>Email Address:
-                <a href="mailto:rajakrishav395@gamil.com" target="_blank"> rajakrishav395@gmail.com</a>
-            </p>
-            <h3>Copyright &copy; -
-                <script>document.write(new Date().getFullYear())</script> - <a href="https://geekyrishav.in"> Rishav
-                    Kumar Rajak </a>- All Rights Reserved
-            </h3>
-        </center>
+          </a>
+        </div>
+        <div class="column qual-col" data-aos="fade-up">
+          <a href="http://svmsindri.com/" target="_blank">
+            <div class="card qual-card">
+              <img src="/Assets/images/homework.webp" alt="Schooling" />
+              <h2>2017</h2>
+              <h3>Saraswati Vidya Mandir Sindri</h3>
+              <p>High School</p>
+            </div>
+          </a>
+        </div>
+      </div>
     </section>
+
+    <section id="contact">
+      <h1 data-aos="zoom-in">Contact Me</h1>
+      <center>
+        <div class="social" data-aos="zoom-in" data-aos-delay="50">
+          <a href="https://facebook.com/iamriishav" target="_blank">
+            <ion-icon id="facebook" name="logo-facebook"></ion-icon>
+          </a>
+          <a href="https://instagram.com/iamriishav" target="_blank">
+            <ion-icon id="instagram" name="logo-instagram"></ion-icon>
+          </a>
+          <a href="https://wa.me/+919472742873" target="_blank">
+            <ion-icon id="wp" name="logo-whatsapp"></ion-icon>
+          </a>
+          <a href="https://twitter.com/iamriishav" target="_blank">
+            <ion-icon id="twitter" name="logo-twitter"></ion-icon>
+          </a>
+          <a href="https://linkedin.com/in/iamriishav" target="_blank">
+            <ion-icon id="linkedin" name="logo-linkedin"></ion-icon>
+          </a>
+          <a href="https://github.com/iamriishav" target="_blank">
+            <ion-icon id="github" name="logo-github"></ion-icon>
+          </a>
+        </div>
+        <div class="mail-content">
+          <ion-icon name="mail-outline"></ion-icon>
+          <p class="email">
+            Email:
+            <a href="mailto:rajakrishav395@gamil.com" target="_blank">
+              rajakrishav395@gmail.com</a
+            >
+          </p>
+        </div>
+        <p class="footer">
+          Copyright &copy;
+          <span id="year"></span>
+          - Rishav Kumar Rajak <br />
+          Created with ❤️
+        </p>
+      </center>
+    </section>
+
     <div class="cursor"></div>
-    <div class="cursor2"></div>
-</body>
-<script>
-    var cursor = document.querySelector('.cursor');
-    var cursor2 = document.querySelector('.cursor2');
-    var navLinks = document.querySelectorAll('a');
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 150,
+        duration: 800,
+        disable: "mobile",
+      });
+    </script>
+    <script>
+      var cur = document.querySelector(".cursor");
+      var navLinks = document.querySelectorAll("a");
 
-    document.addEventListener('mousemove', function (e) {
-        cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
-    })
+      document.addEventListener("mousemove", function (e) {
+        cur.style.cssText =
+          "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+      });
 
-    window.addEventListener("mousemove", cursor);
-    navLinks.forEach(link => {
+      window.addEventListener("mousemove", cur);
+      navLinks.forEach((link) => {
         link.addEventListener("mouseleave", () => {
-            cursor.classList.remove("cursor-large");
-            cursor2.classList.remove("cursor2-n");
+          cur.classList.remove("cursor-large");
         });
 
         link.addEventListener("mousemove", () => {
-            cursor.classList.add("cursor-large");
-            cursor2.classList.add("cursor2-n");
+          cur.classList.add("cursor-large");
         });
-    });
+      });
+    </script>
+    <script>
+      var links = document.querySelectorAll(".nav");
 
-</script>
+      for (var i = 0; i < links.length; i++) {
+        links[i].addEventListener("click", function (event) {
+          event.preventDefault();
 
+          var sectionId = this.getAttribute("href").substring(1);
+
+          var newUrl = window.location.href.split("#")[0];
+          history.pushState({}, "", newUrl);
+
+          document.getElementById(sectionId).scrollIntoView();
+        });
+      }
+    </script>
+    <script>
+      var body = document.body;
+      ham = document.getElementById("ham");
+      hamburger = document.querySelector(".hamburger");
+      hamburger.onclick = function () {
+        navBar = document.querySelector(".nav-right");
+        navItems = document.querySelectorAll(".nav");
+
+        ham.classList.toggle("ham");
+        navBar.classList.toggle("active");
+        body.classList.toggle("no-scroll");
+      };
+
+      open_ham = document.querySelector(".open-ham");
+      open_ham.onclick = function () {
+        navBar = document.querySelector(".nav-right");
+        navItems = document.querySelectorAll(".nav");
+
+        ham.classList.toggle("ham");
+        navBar.classList.toggle("active");
+        body.classList.toggle("no-scroll");
+      };
+    </script>
+    <script>
+      var preloader = document.getElementById("preloader");
+
+      window.addEventListener("load", function () {
+        preloader.style.display = "none";
+      });
+    </script>
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      function myFunction() {
+        var winScroll =
+          document.body.scrollTop || document.documentElement.scrollTop;
+        var height =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+      }
+    </script>
+    <script>
+      var slider = document.querySelector(".slider");
+      var darkMode = localStorage.getItem("darkMode");
+
+      const enableDarkMode = () => {
+        document.body.classList.add("dark-theme");
+        localStorage.setItem("darkMode", "enabled");
+      };
+
+      const disableDarkMode = () => {
+        document.body.classList.remove("dark-theme");
+        localStorage.setItem("darkMode", null);
+      };
+
+      if (darkMode === "enabled") {
+        enableDarkMode();
+      }
+
+      slider.addEventListener("click", () => {
+        darkMode = localStorage.getItem("darkMode");
+        if (darkMode !== "enabled") {
+          enableDarkMode();
+        } else {
+          disableDarkMode();
+        }
+      });
+    </script>
+    <script>
+      var year = document.getElementById("year");
+
+      year.innerHTML = new Date().getFullYear();
+    </script>
+  </body>
 </html>
