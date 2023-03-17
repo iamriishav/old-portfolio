@@ -31,6 +31,9 @@
     />
     <meta name="author" content="Rishav Kumar Rajak" />
     <link rel="stylesheet" href="/CSS/main.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+    </style>
     <link
       rel="shortcut icon"
       href="Assets/images/laptop.webp"
@@ -39,8 +42,8 @@
     <link rel="apple-touch-icon" href="Assets/images/laptop.webp" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"
+      src="https://kit.fontawesome.com/6ac6ec28dc.js"
+      crossorigin="anonymous"
     ></script>
     <script src="/JS/main.js"></script>
     <noscript>Please enable JavaScript to run this page</noscript>
@@ -105,7 +108,10 @@
       <h1 data-aos="zoom-in-up">About</h1>
       <div class="about-container">
         <div class="container" data-aos="slide-right">
-          <h2>Hii, 👋</h2>
+          <h2>
+            Hii,
+            <img src="./Assets/images/waving-hand.webp" alt="waving-hand" />
+          </h2>
           <p>
             I’m an aspiring engineer, tech-savvy, and a pragmatic developer
             wandering around the tech fields to bring creativity to life. My
@@ -139,7 +145,7 @@
     <section id="skill">
       <h1 data-aos="zoom-in-up">My Skills</h1>
       <div class="row">
-        <div class="column" data-aos="fade-up">
+        <div class="column skill-col" data-aos="fade-up">
           <a
             href="https://developer.mozilla.org/en-US/docs/Web/HTML"
             target="_blank"
@@ -154,7 +160,7 @@
             </div>
           </a>
         </div>
-        <div class="column" data-aos="fade-up">
+        <div class="column skill-col" data-aos="fade-up">
           <a
             href="https://developer.mozilla.org/en-US/docs/Web/CSS"
             target="_blank"
@@ -169,7 +175,7 @@
             </div>
           </a>
         </div>
-        <div class="column" data-aos="fade-up">
+        <div class="column skill-col" data-aos="fade-up">
           <a
             href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
             target="_blank"
@@ -184,7 +190,7 @@
             </div>
           </a>
         </div>
-        <div class="column" data-aos="zoom-in-up">
+        <div class="column skill-col" data-aos="zoom-in-up">
           <a href="https://docs.python.org/3/" target="_blank">
             <div class="card">
               <img
@@ -196,7 +202,7 @@
             </div>
           </a>
         </div>
-        <div class="column" data-aos="zoom-in-up">
+        <div class="column skill-col" data-aos="zoom-in-up">
           <a href="https://cppguide.readthedocs.io/en/latest/" target="_blank">
             <div class="card">
               <img src="/Assets/images/c-.webp" alt="c++" class="skill-img" />
@@ -204,7 +210,7 @@
             </div>
           </a>
         </div>
-        <div class="column" data-aos="fade-up">
+        <div class="column skill-col" data-aos="fade-up">
           <a href="https://www.php.net/manual/en/" target="_blank">
             <div class="card">
               <img src="/Assets/images/php.webp" alt="php" class="skill-img" />
@@ -212,7 +218,7 @@
             </div>
           </a>
         </div>
-        <div class="column" data-aos="fade-up">
+        <div class="column skill-col" data-aos="fade-up">
           <a href="https://dev.mysql.com/doc/refman/8.0/en/" target="_blank">
             <div class="card">
               <img
@@ -224,7 +230,7 @@
             </div>
           </a>
         </div>
-        <div class="column" data-aos="fade-up">
+        <div class="column skill-col" data-aos="fade-up">
           <a href="https://www.mongodb.com/docs/" target="_blank">
             <div class="card">
               <img
@@ -236,7 +242,22 @@
             </div>
           </a>
         </div>
-        <div class="column" data-aos="fade-up">
+        <div class="column skill-col" data-aos="fade-up">
+          <a href="https://docs.github.com/en" target="_blank">
+            <div class="card">
+              <!-- <img
+                src="/Assets/images/github.webp"
+                alt="GitHub"
+                class="skill-img"
+                id="guthubSkill"
+              /> -->
+
+              <i class="fa-brands fa-github" id="skill-github" name="logo-github"></i>
+              <p>GitHub</p>
+            </div>
+          </a>
+        </div>
+        <div class="column skill-col" data-aos="fade-up">
           <a
             href="https://getbootstrap.com/docs/4.1/getting-started/introduction/"
             target="_blank"
@@ -251,7 +272,7 @@
             </div>
           </a>
         </div>
-        <div class="column" data-aos="fade-up">
+        <div class="column skill-col" data-aos="fade-up">
           <a
             href="https://v2.tailwindcss.com/docs/installation"
             target="_blank"
@@ -262,7 +283,7 @@
                 alt="Tailwind"
                 class="skill-img"
               />
-              <p>tailwind</p>
+              <p>Tailwind</p>
             </div>
           </a>
         </div>
@@ -339,22 +360,41 @@
       <center>
         <div class="social" data-aos="zoom-in" data-aos-delay="50">
           <a href="https://facebook.com/iamriishav" target="_blank">
-            <ion-icon id="facebook" name="logo-facebook"></ion-icon>
+            <i
+              class="fa-brands fa-square-facebook"
+              id="facebook"
+              name="logo-facebook"
+            ></i>
           </a>
           <a href="https://instagram.com/iamriishav" target="_blank">
-            <ion-icon id="instagram" name="logo-instagram"></ion-icon>
+            <i
+              class="fa-brands fa-instagram"
+              id="instagram"
+              name="logo-instagram"
+            ></i>
           </a>
           <a href="https://wa.me/+919472742873" target="_blank">
-            <ion-icon id="wp" name="logo-whatsapp"></ion-icon>
+            <i class="fa-brands fa-whatsapp" id="wp" name="logo-whatsapp"></i>
           </a>
           <a href="https://twitter.com/iamriishav" target="_blank">
-            <ion-icon id="twitter" name="logo-twitter"></ion-icon>
+            <i
+              class="fa-brands fa-twitter"
+              id="twitter"
+              name="logo-twitter"
+            ></i>
           </a>
           <a href="https://linkedin.com/in/iamriishav" target="_blank">
-            <ion-icon id="linkedin" name="logo-linkedin"></ion-icon>
+            <i
+              class="fa-brands fa-linkedin"
+              id="linkedin"
+              name="logo-linkedin"
+            ></i>
           </a>
           <a href="https://github.com/iamriishav" target="_blank">
-            <ion-icon id="github" name="logo-github"></ion-icon>
+            <i class="fa-brands fa-github" id="github" name="logo-github"></i>
+          </a>
+          <a href="https://kaggle.com/iamriishav" target="_blank">
+            <i class="fa-brands fa-kaggle" id="kaggle" name="logo-kaggle"></i>
           </a>
         </div>
         <div class="mail-content">
@@ -366,14 +406,17 @@
             >
           </p>
         </div>
-        <p class="footer">
-          Copyright &copy;
-          <span id="year"></span>
-          - Rishav Kumar Rajak <br />
-          Created with ❤️
-        </p>
       </center>
     </section>
+
+    <footer id="footer">
+      <p class="footer">
+        Copyright &copy;
+        <span id="year"></span>
+        - Rishav Kumar Rajak <br />
+        Created with ❤️
+      </p>
+    </footer>
 
     <div class="cursor"></div>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -468,6 +511,7 @@
     <script>
       var slider = document.querySelector(".slider");
       var darkMode = localStorage.getItem("darkMode");
+      // var github = document.getElementById("githubSKill");
 
       const enableDarkMode = () => {
         document.body.classList.add("dark-theme");
@@ -487,8 +531,12 @@
         darkMode = localStorage.getItem("darkMode");
         if (darkMode !== "enabled") {
           enableDarkMode();
+          document.getElementById("githubSKill").src =
+            "Assets/images/github-day.webp";
         } else {
           disableDarkMode();
+          // document.getElementById("githubSKill").src =
+          //   "Assets/images/github.webp";
         }
       });
     </script>
