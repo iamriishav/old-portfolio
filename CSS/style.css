@@ -348,6 +348,7 @@ body {
   }
 
   #contact {
+    margin-top: -8rem !important;
     margin-bottom: -5rem !important;
   }
 
@@ -367,7 +368,7 @@ body {
   width: 100%;
   z-index: 99;
   background-color: var(--navbar-color);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(3px);
 }
 
 .nav-left {
